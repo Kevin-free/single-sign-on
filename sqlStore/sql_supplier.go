@@ -12,10 +12,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mattermost/gorp"
 	"github.com/KenmyZhang/single-sign-on/model"
 	"github.com/KenmyZhang/single-sign-on/utils"
 	l4g "github.com/alecthomas/log4go"
+	"github.com/go-gorp/gorp"
 )
 
 const (
@@ -62,7 +62,7 @@ type SqlSupplierResult struct {
 type SqlSupplierOldStores struct {
 	user   UserStore
 	system SystemStore
-	token TokenStore
+	token  TokenStore
 }
 
 type SqlSupplier struct {
@@ -134,12 +134,13 @@ func setupConnection(con_type string, driver string, dataSource string, maxIdle 
 
 	var dbmap *gorp.DbMap
 
-	connectionTimeout := time.Duration(*utils.Cfg.SqlSettings.QueryTimeout) * time.Second
+	// connectionTimeout := time.Duration(*utils.Cfg.SqlSettings.QueryTimeout) * time.Second
 
 	if driver == "sqlite3" {
-		dbmap = &gorp.DbMap{Db: db, TypeConverter: mattermConverter{}, Dialect: gorp.SqliteDialect{}, QueryTimeout: connectionTimeout}
+		// dbmap = &gorp.DbMap{Db: db, TypeConverter: mattermConverter{}, Dialect: gorp.SqliteDialect{}, QueryTimeout: connectionTimeout}
+		dbmap = &gorp.DbMap{Db: db, TypeConverter: mattermConverter{}, Dialect: gorp.SqliteDialect{}}
 	} else if driver == model.DATABASE_DRIVER_MYSQL {
-		dbmap = &gorp.DbMap{Db: db, TypeConverter: mattermConverter{}, Dialect: gorp.MySQLDialect{Engine: "InnoDB", Encoding: "UTF8MB4"}, QueryTimeout: connectionTimeout}
+		dbmap = &gorp.DbMap{Db: db, TypeConverter: mattermConverter{}, Dialect: gorp.MySQLDialect{Engine: "InnoDB", Encoding: "UTF8MB4"}}
 	} else {
 		l4g.Critical(utils.T("store.sql.dialect_driver.critical"))
 		time.Sleep(time.Second)
@@ -313,7 +314,8 @@ func (ss *SqlSupplier) CreateColumnIfNotExists(tableName string, columnName stri
 	}
 
 	if utils.Cfg.SqlSettings.DriverName == model.DATABASE_DRIVER_MYSQL {
-		_, err := ss.GetMaster().ExecNoTimeout("ALTER TABLE " + tableName + " ADD " + columnName + " " + mySqlColType + " DEFAULT '" + defaultValue + "'")
+		// _, err := ss.GetMaster().Exec("ALTER TABLE " + tableName + " ADD " + columnName + " " + mySqlColType + " DEFAULT '" + defaultValue + "'")
+		_, err := ss.GetMaster().Exec("ALTER TABLE " + tableName + " ADD " + columnName + " " + mySqlColType + " DEFAULT '" + defaultValue + "'")
 		if err != nil {
 			l4g.Critical(utils.T("store.sql.create_column.critical"), err)
 			time.Sleep(time.Second)
@@ -336,7 +338,7 @@ func (ss *SqlSupplier) RemoveColumnIfExists(tableName string, columnName string)
 		return false
 	}
 
-	_, err := ss.GetMaster().ExecNoTimeout("ALTER TABLE " + tableName + " DROP COLUMN " + columnName)
+	_, err := ss.GetMaster().Exec("ALTER TABLE " + tableName + " DROP COLUMN " + columnName)
 	if err != nil {
 		l4g.Critical("Failed to drop column %v", err)
 		time.Sleep(time.Second)
@@ -351,7 +353,7 @@ func (ss *SqlSupplier) RemoveTableIfExists(tableName string) bool {
 		return false
 	}
 
-	_, err := ss.GetMaster().ExecNoTimeout("DROP TABLE " + tableName)
+	_, err := ss.GetMaster().Exec("DROP TABLE " + tableName)
 	if err != nil {
 		l4g.Critical("Failed to drop table %v", err)
 		time.Sleep(time.Second)
@@ -368,7 +370,7 @@ func (ss *SqlSupplier) RenameColumnIfExists(tableName string, oldColumnName stri
 
 	var err error
 	if utils.Cfg.SqlSettings.DriverName == model.DATABASE_DRIVER_MYSQL {
-		_, err = ss.GetMaster().ExecNoTimeout("ALTER TABLE " + tableName + " CHANGE " + oldColumnName + " " + newColumnName + " " + colType)
+		_, err = ss.GetMaster().Exec("ALTER TABLE " + tableName + " CHANGE " + oldColumnName + " " + newColumnName + " " + colType)
 	}
 
 	if err != nil {
@@ -407,7 +409,7 @@ func (ss *SqlSupplier) AlterColumnTypeIfExists(tableName string, columnName stri
 
 	var err error
 	if utils.Cfg.SqlSettings.DriverName == model.DATABASE_DRIVER_MYSQL {
-		_, err = ss.GetMaster().ExecNoTimeout("ALTER TABLE " + tableName + " MODIFY " + columnName + " " + mySqlColType)
+		_, err = ss.GetMaster().Exec("ALTER TABLE " + tableName + " MODIFY " + columnName + " " + mySqlColType)
 	}
 
 	if err != nil {
@@ -456,7 +458,7 @@ func (ss *SqlSupplier) createIndexIfNotExists(indexName string, tableName string
 			fullTextIndex = " FULLTEXT "
 		}
 
-		_, err = ss.GetMaster().ExecNoTimeout("CREATE  " + uniqueStr + fullTextIndex + " INDEX " + indexName + " ON " + tableName + " (" + columnName + ")")
+		_, err = ss.GetMaster().Exec("CREATE  " + uniqueStr + fullTextIndex + " INDEX " + indexName + " ON " + tableName + " (" + columnName + ")")
 		if err != nil {
 			l4g.Critical(utils.T("store.sql.create_index.critical"), err)
 			time.Sleep(time.Second)
@@ -486,7 +488,7 @@ func (ss *SqlSupplier) RemoveIndexIfExists(indexName string, tableName string) b
 			return false
 		}
 
-		_, err = ss.GetMaster().ExecNoTimeout("DROP INDEX " + indexName + " ON " + tableName)
+		_, err = ss.GetMaster().Exec("DROP INDEX " + indexName + " ON " + tableName)
 		if err != nil {
 			l4g.Critical(utils.T("store.sql.remove_index.critical"), err)
 			time.Sleep(time.Second)
