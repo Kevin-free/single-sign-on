@@ -21,7 +21,7 @@
     HTTP/1.1 200 OK
 
 ### Example
-    curl -X POST "http://127.0.0.1:8065/sso/users/email/verify/code/send" -d '{"email":"1027837952@qq.com"}' -i
+    curl -X POST "http://127.0.0.1:9966/sso/users/email/verify/code/send" -d '{"email":"1215894562@qq.com"}' -i
         HTTP/1.1 200 OK
         Content-Length: 15
         Content-Type: application/json

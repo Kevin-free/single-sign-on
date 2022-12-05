@@ -1,0 +1,108 @@
+[2022/12/04 23:41:15 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/04 23:41:15 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/04 23:41:15 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/04 23:41:15 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/04 23:41:15 CST] [INFO] 服务正在初始化...
+[2022/12/04 23:41:15 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:41:15 CST] [EROR] Failed to ping DB retrying in 10 seconds err=dial tcp 127.0.0.1:3308: getsockopt: connection refused
+[2022/12/04 23:41:25 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:41:25 CST] [EROR] Failed to ping DB retrying in 10 seconds err=dial tcp 127.0.0.1:3308: getsockopt: connection refused
+[2022/12/04 23:44:34 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/04 23:44:34 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/04 23:44:34 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/04 23:44:34 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/04 23:44:34 CST] [INFO] 服务正在初始化...
+[2022/12/04 23:44:34 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:44:36 CST] [EROR] Failed to ping DB retrying in 10 seconds err=dial tcp: lookup mysqlhost: Temporary failure in name resolution
+[2022/12/04 23:44:46 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:44:48 CST] [EROR] Failed to ping DB retrying in 10 seconds err=dial tcp: lookup mysqlhost: Temporary failure in name resolution
+[2022/12/04 23:46:36 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/04 23:46:36 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/04 23:46:36 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/04 23:46:36 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/04 23:46:36 CST] [INFO] 服务正在初始化...
+[2022/12/04 23:46:36 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:46:36 CST] [EROR] Failed to ping DB retrying in 10 seconds err=this authentication plugin is not supported
+[2022/12/04 23:46:46 CST] [INFO] Pinging SQL master database
+[2022/12/04 23:46:46 CST] [EROR] Failed to ping DB retrying in 10 seconds err=this authentication plugin is not supported
+[2022/12/05 00:07:57 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/05 00:07:57 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/05 00:07:57 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/05 00:07:57 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/05 00:07:57 CST] [INFO] 服务正在初始化...
+[2022/12/05 00:07:57 CST] [INFO] Pinging SQL master database
+[2022/12/05 00:07:58 CST] [INFO] store.sql.schema_set.info%!(EXTRA string=4.0.0)
+[2022/12/05 00:07:59 CST] [INFO] 启动服务...
+[2022/12/05 00:07:59 CST] [INFO] 服务正在监听 :9966
+[2022/12/05 00:09:34 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/login, string=SqlUserStore.GetForLogin, int=400, string=1sx893h81jy55eg3t7uam4r1ce, string=, string=127.0.0.1, string=store.sql_user.get_for_login.app_error, string=)
+[2022/12/05 10:40:13 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/05 10:40:13 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/05 10:40:13 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/05 10:40:13 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/05 10:40:13 CST] [INFO] 服务正在初始化...
+[2022/12/05 10:40:13 CST] [INFO] Pinging SQL master database
+[2022/12/05 10:40:13 CST] [INFO] 启动服务...
+[2022/12/05 10:40:13 CST] [INFO] 服务正在监听 :9966
+[2022/12/05 10:43:28 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/login, string=SqlUserStore.GetForLogin, int=400, string=6fynaumft3ftfrnc37ogt96ffr, string=, string=127.0.0.1, string=store.sql_user.get_for_login.app_error, string=)
+[2022/12/05 10:47:06 CST] [EROR] SendVerifyEmail: api.user.send_verify_email_and_forget.failed.error, SendMail: utils.mail.new_client.auth.app_error, 535 Login Fail. Please enter your authorization code to login. More information in http://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=1001256
+[2022/12/05 10:53:13 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:53:13 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:53:13 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:54:50 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:54:50 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:54:50 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:54:56 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:54:56 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:54:56 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:54:56 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: invalid character '\n' in string literal
+[2022/12/05 10:55:00 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:00 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:00 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:04 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:04 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:04 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:04 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: invalid character '\n' in string literal
+[2022/12/05 10:55:06 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:06 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:06 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:06 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: invalid character '\n' in string literal
+[2022/12/05 10:55:11 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:11 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:11 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:12 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:12 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:12 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:13 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 10:55:13 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 10:55:13 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 11:18:04 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/05 11:18:04 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/05 11:18:04 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/05 11:18:04 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/05 11:18:04 CST] [INFO] 服务正在初始化...
+[2022/12/05 11:18:04 CST] [INFO] Pinging SQL master database
+[2022/12/05 11:18:04 CST] [INFO] 启动服务...
+[2022/12/05 11:18:04 CST] [INFO] 服务正在监听 :9966
+[2022/12/05 11:19:54 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/email/signup, string=VerifiedCode, int=500, string=989geice3pnj5bowbo1kqhdbky, string=, string=127.0.0.1, string=api.user.verified_code.expire.app_error, string=verified code expire)
+[2022/12/05 11:21:28 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 11:21:28 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 11:21:28 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 11:21:33 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 11:21:33 CST] [EROR] Failed to read while watching config file at /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json with err=While parsing config: unexpected end of JSON input
+[2022/12/05 11:21:33 CST] [INFO] Config file watcher detected a change reloading /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json
+[2022/12/05 11:25:17 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/email/signup, string=User.IsValid, int=400, string=64gx6hjebf8g88q9fdtcfj3e3c, string=, string=127.0.0.1, string=model.user.is_valid.pwd_lowercase_uppercase_number.app_error, string=)
+[2022/12/05 11:44:17 CST] [EROR] api.user.create_user.save.error%!(EXTRA *model.AppError=SqlUserStore.Save: store.sql_user.save.username_exists.app_error, user_id=iun5kw49gjr3tx8767gyatsp6r, Error 1062: Duplicate entry 'test001' for key 'Users.Username')
+[2022/12/05 11:44:17 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/phone/signup, string=SqlUserStore.Save, int=400, string=1xc6r7r7pfdpxj1m4a3tke381r, string=, string=127.0.0.1, string=store.sql_user.save.username_exists.app_error, string=user_id=iun5kw49gjr3tx8767gyatsp6r, Error 1062: Duplicate entry 'test001' for key 'Users.Username')
+[2022/12/05 11:49:59 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/phone/signup, string=VerifiedCode, int=500, string=apjoctwy17fp7p9jx8kc6bcnrw, string=, string=127.0.0.1, string=api.user.verified_code.expire.app_error, string=verified code expire)
+[2022/12/05 14:52:51 CST] [INFO] 从 '/home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/i18n/zh-CN.json' 加载 'zh-CN' 系统翻译信息
+[2022/12/05 14:52:51 CST] [INFO] 当前版本是 4.0.0 (dev/2017年 12月 26日 星期二 08:20:07 UTC/314f2e02bee5781da6c16ca330e29d15a2f12ebf)
+[2022/12/05 14:52:51 CST] [INFO] 当前工作目录是 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on
+[2022/12/05 14:52:51 CST] [INFO] 从 /home/kevin/gocode/src/162-CKXM参考项目/single-sign-on/config/config.json 加载配置文件
+[2022/12/05 14:52:51 CST] [INFO] 服务正在初始化...
+[2022/12/05 14:52:51 CST] [INFO] Pinging SQL master database
+[2022/12/05 14:52:51 CST] [INFO] 启动服务...
+[2022/12/05 14:52:51 CST] [INFO] 服务正在监听 :9966
+[2022/12/05 14:59:20 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/login, string=checkUserPassword, int=401, string=ksmwak51ujgbjgnuezx53enare, string=, string=127.0.0.1, string=api.user.check_user_password.invalid.app_error, string=user_id=yi3mbqz57pnzbdk31kzk3tq4ga)
+[2022/12/05 15:15:54 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/email/reset, string=VerifiedCode, int=500, string=t1js6fpcbidkbkxcdgrsg8nzyr, string=, string=127.0.0.1, string=api.user.verified_code.expire.app_error, string=verified code expire)
+[2022/12/05 15:25:17 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/email/reset, string=VerifiedCode, int=500, string=3ixsoz3wwfro5y5z7hf48qab9c, string=, string=127.0.0.1, string=api.user.verified_code.expire.app_error, string=verified code expire)
+[2022/12/05 15:34:34 CST] [EROR] api.context.log.error%!(EXTRA string=/sso/users/email/signup, string=User.IsValid, int=400, string=gk7eosycufd7uxyzoew5fzoqzc, string=, string=127.0.0.1, string=model.user.is_valid.pwd_lowercase_uppercase_number.app_error, string=)

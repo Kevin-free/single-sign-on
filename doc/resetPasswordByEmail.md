@@ -26,15 +26,17 @@
 
 
 ### Example
-    curl -X POST http://www.example.com:8866/sso/users/email/reset -d '{"email":"1027837952@qq.com","verification_code":"733644","new_password":"Zhang12345678"}' -i
-        HTTP/1.1 200 OK
-        Content-Length: 15
-        Content-Type: application/json
-        Date: Thu, 14 Dec 2017 09:38:01 GMT
-        Keep-Alive: timeout=38
-        X-Request-Id: 1qztm788rtbh3jomuhsg4jwg3e
-        X-Version-Id: 4.0.0.dev.bae7f642f417866b946b24c3b5acf6fb
+```Bash
+curl -X POST "http://127.0.0.1:9966/sso/users/email/reset" -d '{"email":"kevin1258@foxmail.com","verification_code":"135272","new_password":"Password120538"}' -i
 
-    {
-        "status":"OK"
-    }
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Request-Id: mzqefnzfut867cj3b88einf5ta
+X-Version-Id: 4.0.0.dev.53cd9ade63e982a7a4a281bb0c391417
+Date: Mon, 05 Dec 2022 07:39:32 GMT
+Content-Length: 15
+```
+
+```Bash
+{"status":"OK"}
+```

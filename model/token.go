@@ -5,8 +5,8 @@ import "net/http"
 const (
 	TOKEN_SIZE            = 64
 	MAX_TOKEN_EXIPRY_TIME = 1000 * 60 * 60 * 24 // 24 hour
-	MAX_SMS_TOKEN_EXIPRY_TIME = 1000 * 60 * 1 // 1 min
-	MAX_EMAIL_TOKEN_EXIPRY_TIME = 1000 * 60 * 1 // 1 min
+	MAX_SMS_TOKEN_EXIPRY_TIME = 1000 * 60 * 10 // 10 min
+	MAX_EMAIL_TOKEN_EXIPRY_TIME = 1000 * 60 * 10 // 10 min
 	SEND_CODE_MAX = 60
 	TOKEN_TYPE_OAUTH      = "oauth"
 )

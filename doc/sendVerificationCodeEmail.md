@@ -21,16 +21,16 @@
     HTTP/1.1 200 OK
 
 ### Example
-    curl -X POST "http://127.0.0.1:8065/sso/users/email/verify/code/send" -d '{"email":"1027837952@qq.com"}' -i
-        HTTP/1.1 200 OK
-        Content-Length: 15
-        Content-Type: application/json
-        Date: Wed, 06 Dec 2017 09:53:40 GMT
-        Keep-Alive: timeout=38
-        X-Request-Id: iuhi5ybfk7n8jmyooof5u56yrh
-        X-Version-Id: 4.0.0.dev.298c10b2fa4782ea6ac753859868a67f
+```Bash
+curl -X POST "http://127.0.0.1:9966/sso/users/email/verify/code/send" -d '{"email":"kevin1258@foxmail.com"}' -i
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Request-Id: tmx1qdmerjruim4ukmuafng6oy
+X-Version-Id: 4.0.0.dev.53cd9ade63e982a7a4a281bb0c391417
+Date: Mon, 05 Dec 2022 07:12:09 GMT
+Content-Length: 15
+```
 
-
-    {
-        "status":"OK"
-    }
+```Bash
+{"status":"OK"}
+```

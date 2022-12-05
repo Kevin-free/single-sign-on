@@ -20,16 +20,17 @@
 ### Response Code
     HTTP/1.1 200 OK
 
-### Example(存在)
-    curl -X POST  "http://127.0.0.1:8065/sso/users/phone/exist"  -i -d '{"mobile":"13544285663"}'
-        HTTP/1.1 200 OK
-        Content-Length: 17
-        Content-Type: application/json
-        Date: Thu, 07 Dec 2017 03:34:12 GMT
-        Keep-Alive: timeout=38
-        X-Request-Id: ka16q5isi7rs98yqytsjzk3ype
-        X-Version-Id: 4.0.0.dev.0d1bdaabb8272d8016bd57816dad483f
+### Example
+```Bash
+curl -X POST  "http://127.0.0.1:9966/sso/users/phone/exist"  -i -d '{"mobile":"15727546131"}'
 
-    {
-        "status":"true"
-    }
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Request-Id: b7dxg9uj678adri6zgypd4dkcw
+X-Version-Id: 4.0.0.dev.53cd9ade63e982a7a4a281bb0c391417
+Date: Mon, 05 Dec 2022 06:56:31 GMT
+Content-Length: 18
+```
+```Bash
+{"status":"false"}
+```

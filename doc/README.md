@@ -25,9 +25,9 @@
 
 
 ### 约束
-  短信验证码有效期一分钟（MAX_SMS_TOKEN_EXIPRY_TIME），一分钟内只能发送一次验证码，24小时内只能发送60条短信（SEND_CODE_MAX，MAX_TOKEN_EXIPRY_TIME），以防止恶意用户
+  短信验证码有效期 10 分钟（MAX_SMS_TOKEN_EXIPRY_TIME），一分钟内只能发送一次验证码，24小时内只能发送60条短信（SEND_CODE_MAX，MAX_TOKEN_EXIPRY_TIME），以防止恶意用户
   
-  邮件验证码有效期一分钟 (MAX_EMAIL_TOKEN_EXIPRY_TIME）,一分钟内只能发送一次验证码
+  邮件验证码有效期 10 分钟 (MAX_EMAIL_TOKEN_EXIPRY_TIME）,一分钟内只能发送一次验证码
 
   密码长度最小长度5，最大长度72（USER_PASSWORD_MAX_LENGTH）,必须包含大写字母、小写字母、数字
   

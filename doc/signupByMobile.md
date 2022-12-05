@@ -56,7 +56,7 @@
     HTTP/1.1 201 Created
 
 ### Example
-    curl -X POST "http://127.0.0.1:8065/sso/users/phone/signup"  -i -d '{"username":"hesdfdsfotstni","nickname":"mynice","password":"12345678","verification_code": "666666","mobile":"13544285684"}'  -b  ~/go/src/github.com/mattermost/example/bin/cookie-file
+    curl -X POST "http://127.0.0.1:9966/sso/users/phone/signup"  -i -d '{"username":"phone001","nickname":"phone001","password":"Passwordtest001","verification_code": "666666","mobile":"15727546130"}'  -b  ./cookie-file
         HTTP/1.1 201 Created
         Content-Length: 600
         Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYXQ1OWU3MWlndG5qcHB1ZGVnamRuam1pMXciLCJyb2xlcyI6Im5vcm1hbF91c2VyIiwicHJvcHMiOnsiYnJvd3NlciI6IkdvLWh0dHAtY2xpZW50LzEuMSIsIm9zIjoidW5rbm93biIsInBsYXRmb3JtIjoidW5rbm93biJ9LCJ0ZWFtX21lbWJlcnMiOm51bGwsImRldmljZV9pZCI6IiIsImlzX29hdXRoIjpmYWxzZSwiZXhwIjoxNTE0Mjg4MTkxLCJpYXQiOjE1MTI1NjAxOTEsImlzcyI6Ind3dy5hY2N1cm1lLmNvbSJ9.YdMwEqOK_61AeJtlVp-9f42C9Wy70slnL-1Uq5c7cq4

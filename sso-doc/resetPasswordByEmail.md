@@ -26,7 +26,7 @@
 
 
 ### Example
-    curl -X POST http://www.example.com:8866/sso/users/email/reset -d '{"email":"1027837952@qq.com","verification_code":"733644","new_password":"Zh***g12345678"}' -i
+    curl -X POST http://www.example.com:8866/sso/users/email/reset -d '{"email":"1215894562@qq.com","verification_code":"733644","new_password":"Zh***g12345678"}' -i
         HTTP/1.1 200 OK
         Content-Length: 15
         Content-Type: application/json

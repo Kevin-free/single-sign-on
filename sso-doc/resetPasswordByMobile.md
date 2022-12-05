@@ -25,7 +25,7 @@
 
 
 ### Example
-	curl -X POST  "http://127.0.0.1:8065/sso/users/phone/reset"  -i -d '{"mobile":"13544285662","verification_code":"666666","new_password":"4*****01"}'
+	curl -X POST  "http://127.0.0.1:9966/sso/users/phone/reset"  -i -d '{"mobile":"15727546130","verification_code":"666666","new_password":"4*****01"}'
     HTTP/1.1 200 OK
     Content-Length: 15
     Content-Type: application/json

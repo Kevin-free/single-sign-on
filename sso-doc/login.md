@@ -8,7 +8,7 @@
 
 ### Request Payload
     {
-        "login_id":"2224052849@qq.com",
+        "login_id":"1215894562@qq.com",
         "password":"Zht*****3t401"
     }
 
@@ -36,7 +36,7 @@
     HTTP/1.1 200 OK
 
 ### Example
-    curl -X POST  "http://127.0.0.1:9966/sso/users/login"  -i -d '{"login_id":"13544285662","password":"Zhtreter****45678"}'
+    curl -X POST  "http://127.0.0.1:9966/sso/users/login"  -i -d '{"login_id":"15727546130","password":"Zhtreter****45678"}'
         HTTP/1.1 200 OK
         Content-Type: application/json
         Set-Cookie: AUTHTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzR6YXQxenQ5N2I5dXlobTdiZmJ1cHJiamUiLCJyb2xlcyI6InN5c3RlbV9hZG1pbiIsInByb3BzIjp7ImJyb3dzZXIiOiJjdXJsLzcuNDcuMCIsIm9zIjoidW5rbm93biIsInBsYXRmb3JtIjoidW5rbm93biJ9LCJleHAiOjE1MTYwMDY3OTAsImlhdCI6MTUxNDI3ODc5MCwiaXNzIjoid3d3LmFjY3VybWUuY29tIn0.si7qPIYV4n3xRzyDgeVWRFCiHnfkkwGbRsFJQpSlF_o; Path=/; Expires=Mon, 15 Jan 2018 08:59:50 GMT; Max-Age=1728000; HttpOnly

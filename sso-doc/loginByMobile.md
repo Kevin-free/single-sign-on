@@ -23,7 +23,7 @@
         "username": "hesdfdsfotstni",
         "gender": "",
         "auth_service": "",
-        "email": "2224052849@qq.com",
+        "email": "1215894562@qq.com",
         "nickname": "mynice",
         "first_name": "",
         "last_name": "",
@@ -31,7 +31,7 @@
         "roles": "system_admin",
         "allow_marketing": true,
         "locale": "zh-CN",
-        "mobile": "13544285662"
+        "mobile": "15727546130"
     }
     
   
@@ -39,7 +39,7 @@
      HTTP/1.1 200 OK
 
 ### Example 手机 + 验证码
-    curl -X POST  "http://127.0.0.1:9966/sso/users/phone/login"  -i -d '{"mobile":"13544285662","verification_code":"666666"}'
+    curl -X POST  "http://127.0.0.1:9966/sso/users/phone/login"  -i -d '{"mobile":"15727546130","verification_code":"666666"}'
         HTTP/1.1 200 OK
         Content-Type: application/json
         Set-Cookie: AUTHTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzR6YXQxenQ5N2I5dXlobTdiZmJ1cHJiamUiLCJyb2xlcyI6InN5c3RlbV9hZG1pbiIsInByb3BzIjp7ImJyb3dzZXIiOiJjdXJsLzcuNDcuMCIsIm9zIjoidW5rbm93biIsInBsYXRmb3JtIjoidW5rbm93biJ9LCJleHAiOjE1MTYwMDcwNTAsImlhdCI6MTUxNDI3OTA1MCwiaXNzIjoid3d3LmFjY3VybWUuY29tIn0.LnNXdBeeuGlal697KOTdbd6ebvCr0NQKxgoasFPnvLs; Path=/; Expires=Mon, 15 Jan 2018 09:04:10 GMT; Max-Age=1728000; HttpOnly
@@ -58,7 +58,7 @@
         "username": "hesdfdsfotstni",
         "gender": "",
         "auth_service": "",
-        "email": "2224052849@qq.com",
+        "email": "1215894562@qq.com",
         "nickname": "mynice",
         "first_name": "",
         "last_name": "",
@@ -66,5 +66,5 @@
         "roles": "system_admin",
         "allow_marketing": true,
         "locale": "zh-CN",
-        "mobile": "13544285662"
+        "mobile": "15727546130"
     }

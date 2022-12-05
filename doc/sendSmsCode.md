@@ -19,7 +19,7 @@
     HTTP/1.1 200 OK
 
 ### Example
-    curl -X POST  "http://127.0.0.1:8065/sso/users/sendsms"  -d '{"mobile":"13544285662"}'  -D cookie-file -i
+    curl -X POST  "http://127.0.0.1:9966/sso/users/sendsms"  -d '{"mobile":"15727546130"}'  -D cookie-file -i
         HTTP/1.1 200 OK
         Content-Length: 15
         Content-Type: application/json

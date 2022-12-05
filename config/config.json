@@ -18,7 +18,7 @@
     },
     "SqlSettings": {
         "DriverName": "mysql",
-        "DataSource": ":-@tcp(127.0.0.1:3308)/?charset=utf8mb4,utf8\u0026readTimeout=30s\u0026writeTimeout=30s",
+        "DataSource": "ssouser:ssouser-password@tcp(127.0.0.1:3306)/sso?charset=utf8mb4,utf8",
         "DataSourceReplicas": [],
         "DataSourceSearchReplicas": [],
         "MaxIdleConns": 20,
@@ -32,11 +32,11 @@
         "MaxFileSize": 52428800,
         "InitialFont": "init.ttf",
         "Directory": "./data/"
-    },   
-    "JWTSettings":{
-    	"Secret":"1kfjdsljfkdoja3456etr7gr890",
-	   "Issuer":"",
-	   "ExpireTimeLengthInDays": 20
+    },
+    "JWTSettings": {
+        "Secret": "1kfjdsljfkdoja3456etr7gr890",
+        "Issuer": "",
+        "ExpireTimeLengthInDays": 20
     },
     "LogSettings": {
         "EnableConsole": true,
@@ -67,16 +67,16 @@
         "EnableSignUpWithEmail": true,
         "EnableSignInWithEmail": true,
         "EnableSignInWithUsername": true,
-        "FeedbackName": "",
-        "FeedbackEmail": "2224052849@qq.com",
+        "FeedbackName": "kevin",
+        "FeedbackEmail": "kevin1258@foxmail.com",
         "FeedbackOrganization": "",
         "EnableSMTPAuth": true,
-        "SMTPUsername": "2224052849@qq.com",
-        "SMTPPassword": "",
+        "SMTPUsername": "kevin1258@foxmail.com",
+        "SMTPPassword": "psbtyuciyebpgcce",
         "SMTPServer": "smtp.qq.com",
         "SMTPPort": "587",
         "ConnectionSecurity": "STARTTLS",
-        "SkipServerCertificateVerification": true        
+        "SkipServerCertificateVerification": true
     },
     "RateLimitSettings": {
         "Enable": false,
@@ -108,8 +108,8 @@
         "AdministratorsGuideLink": "",
         "TroubleshootingForumLink": "",
         "CommercialSupportLink": "",
-        "SupportEmail": "zhangkunming@.com"
-    },    
+        "SupportEmail": "kevin1258@foxmail.com"
+    },
     "LocalizationSettings": {
         "DefaultServerLocale": "zh-CN",
         "DefaultClientLocale": "zh-CN",

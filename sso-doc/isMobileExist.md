@@ -21,7 +21,7 @@
     HTTP/1.1 200 OK
 
 ### Example(存在)
-    curl -X POST  "http://127.0.0.1:8065/sso/users/phone/exist"  -i -d '{"mobile":"13544285663"}'
+    curl -X POST  "http://127.0.0.1:9966/sso/users/phone/exist"  -i -d '{"mobile":"13544285663"}'
         HTTP/1.1 200 OK
         Content-Length: 17
         Content-Type: application/json
